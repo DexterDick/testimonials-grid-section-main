@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  --Moderateviolet: hsl(263, 55%, 52%);
+  --Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --Verydarkblackishblue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* remove border later for testing only */
+  border: 1px solid black;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+  background-color: var(--White);
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5%;
+}
+
+.card-1 {
+  background-color: var(--Moderateviolet);
+}
+.card-2 {
+  background-color: var(--Verydarkgrayishblue);
+}
+
+.card-3 {
+  background-color: var(--White);
+}
+
+.card-4 {
+  background-color: var(--Verydarkblackishblue);
+}
+.card-5 {
+  background-color: var(--White);
+}
+
+.profile {
+  display: flex;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.profile-info {
+}
+.name {
+}
+.graduate {
+}
+
+.testimonial {
+}
+
+.title {
+}
+
+.quote {
+}
