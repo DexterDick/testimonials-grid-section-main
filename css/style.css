@@ -16,7 +16,7 @@
   padding: 0;
   box-sizing: inherit;
   /* remove border later for testing only */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 html {
@@ -28,10 +28,17 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1.3rem;
   background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .main {
-  width: 80%;
+  width: 100%;
+  max-width: 1110px;
+  padding: 3%;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -61,8 +68,8 @@ body {
 .card {
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 5%;
   color: red;
+  padding: 2rem;
 }
 
 .card.text-dark {
@@ -146,8 +153,7 @@ body {
 
 @media screen and (max-width: 660px) {
   .main {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
   }
-} ;
+}
